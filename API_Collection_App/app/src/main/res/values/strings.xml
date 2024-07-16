@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Assignment222</string>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/blue</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="BlueCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/blue</item>
+    </style>
+
+    <style name="BlueButtonStyle" parent="@android:style/Widget.Button">
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

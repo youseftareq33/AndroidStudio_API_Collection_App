@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background_blur">
+
+    <!-- top -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USA Zip Code:"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"/>
+
+    <!-- center -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zip Code:"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"/>
+
+        <EditText
+            android:id="@+id/editTextZipCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="ex: 33162                            "
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"/>
+
+        <ImageView
+            android:id="@+id/error_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/uncorrect"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/error_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Please fill country name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/design_default_color_error"/>
+
+
+    <TextView
+        android:id="@+id/textViewZipCode"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:background="@color/white"/>
+
+    <!-- bottom -->
+    <Button
+        android:id="@+id/buttonZipCode"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Search"
+        android:textSize="17dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        style="@style/BlueButtonStyle"/>
+
+</LinearLayout>
